@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/assignment4/multithreadedserver.c
+sys/socket.h
+-
+sys/dir.h
+-
+sys/types.h
+-
+resolv.h
+-
+unistd.h
+-
+pthread.h
+-
+stdio.h
+-
+string.h
+-
+dirent.h
+-
+

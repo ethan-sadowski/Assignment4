@@ -1,0 +1,27 @@
+#include "Thread.h"
+#include "ServerThread.h"
+#include <pthread.h>
+#include <cstdlib>
+#include <cstring>
+void* startMethodInThread(void *arg)
+{
+    if (arg == NULL)
+        return 0;
+    ServerThread *thread = (ServerThread*)arg;
+    thread->run();
+    thread->closeThread();
+    return NULL;
+}
+Thread::Thread(Thread *childThread) {
+    this->state = malloc(sizeof(pthread_t));
+    this->childThread = childThread;
+}
+void Thread::start() {
+    pthread_t tid;
+    perror("made thread?");
+    pthread_create(&tid, NULL, startMethodInThread, (void *) this);
+    memcpy(this->state, (const void *)&tid, sizeof(pthread_t));
+}
+Thread::~Thread() {
+    free(this->state);
+}

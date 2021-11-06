@@ -22,6 +22,7 @@ public:
     HttpServletRequest(HttpServletRequest& c) : inputStream(c.inputStream), headers(c.headers){};
     void serialize();
     string getHeader(const string& key) {return this->headers.at(key);}
+    void addHeader(const string& key, string& value) {this->headers.insert(make_pair(key, value));}
     ~HttpServletRequest()= default;
 };
 

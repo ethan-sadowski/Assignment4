@@ -321,30 +321,6 @@ UploadServlet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadServlet.cpp.s
 .PHONY : UploadServlet.cpp.s
 
-multithreadedserver.o: multithreadedserver.c.o
-.PHONY : multithreadedserver.o
-
-# target to build an object file
-multithreadedserver.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/multithreadedserver.c.o
-.PHONY : multithreadedserver.c.o
-
-multithreadedserver.i: multithreadedserver.c.i
-.PHONY : multithreadedserver.i
-
-# target to preprocess a source file
-multithreadedserver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/multithreadedserver.c.i
-.PHONY : multithreadedserver.c.i
-
-multithreadedserver.s: multithreadedserver.c.s
-.PHONY : multithreadedserver.s
-
-# target to generate assembly for a file
-multithreadedserver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/multithreadedserver.c.s
-.PHONY : multithreadedserver.c.s
-
 multithreadedserver.o: multithreadedserver.cpp.o
 .PHONY : multithreadedserver.o
 
@@ -426,9 +402,6 @@ help:
 	@echo "... UploadServlet.o"
 	@echo "... UploadServlet.i"
 	@echo "... UploadServlet.s"
-	@echo "... multithreadedserver.o"
-	@echo "... multithreadedserver.i"
-	@echo "... multithreadedserver.s"
 	@echo "... multithreadedserver.o"
 	@echo "... multithreadedserver.i"
 	@echo "... multithreadedserver.s"

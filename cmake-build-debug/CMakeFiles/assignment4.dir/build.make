@@ -66,22 +66,9 @@ include CMakeFiles/assignment4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/assignment4.dir/flags.make
 
-CMakeFiles/assignment4.dir/multithreadedserver.c.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/multithreadedserver.c.o: ../multithreadedserver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assignment4.dir/multithreadedserver.c.o"
-	/usr/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/assignment4.dir/multithreadedserver.c.o -c /home/Ethan/assignment4/multithreadedserver.c
-
-CMakeFiles/assignment4.dir/multithreadedserver.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assignment4.dir/multithreadedserver.c.i"
-	/usr/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/Ethan/assignment4/multithreadedserver.c > CMakeFiles/assignment4.dir/multithreadedserver.c.i
-
-CMakeFiles/assignment4.dir/multithreadedserver.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assignment4.dir/multithreadedserver.c.s"
-	/usr/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/Ethan/assignment4/multithreadedserver.c -o CMakeFiles/assignment4.dir/multithreadedserver.c.s
-
 CMakeFiles/assignment4.dir/socketclient.cc.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/socketclient.cc.o: ../socketclient.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignment4.dir/socketclient.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignment4.dir/socketclient.cc.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/socketclient.cc.o -c /home/Ethan/assignment4/socketclient.cc
 
 CMakeFiles/assignment4.dir/socketclient.cc.i: cmake_force
@@ -94,7 +81,7 @@ CMakeFiles/assignment4.dir/socketclient.cc.s: cmake_force
 
 CMakeFiles/assignment4.dir/ServerSocket.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/ServerSocket.cpp.o: ../ServerSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment4.dir/ServerSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignment4.dir/ServerSocket.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/ServerSocket.cpp.o -c /home/Ethan/assignment4/ServerSocket.cpp
 
 CMakeFiles/assignment4.dir/ServerSocket.cpp.i: cmake_force
@@ -107,7 +94,7 @@ CMakeFiles/assignment4.dir/ServerSocket.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/Socket.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/Socket.cpp.o: ../Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment4.dir/Socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment4.dir/Socket.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/Socket.cpp.o -c /home/Ethan/assignment4/Socket.cpp
 
 CMakeFiles/assignment4.dir/Socket.cpp.i: cmake_force
@@ -120,7 +107,7 @@ CMakeFiles/assignment4.dir/Socket.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/Thread.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/Thread.cpp.o: ../Thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment4.dir/Thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment4.dir/Thread.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/Thread.cpp.o -c /home/Ethan/assignment4/Thread.cpp
 
 CMakeFiles/assignment4.dir/Thread.cpp.i: cmake_force
@@ -133,7 +120,7 @@ CMakeFiles/assignment4.dir/Thread.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/multithreadedserver.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/multithreadedserver.cpp.o: ../multithreadedserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment4.dir/multithreadedserver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment4.dir/multithreadedserver.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/multithreadedserver.cpp.o -c /home/Ethan/assignment4/multithreadedserver.cpp
 
 CMakeFiles/assignment4.dir/multithreadedserver.cpp.i: cmake_force
@@ -146,7 +133,7 @@ CMakeFiles/assignment4.dir/multithreadedserver.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/ServerThread.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/ServerThread.cpp.o: ../ServerThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment4.dir/ServerThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment4.dir/ServerThread.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/ServerThread.cpp.o -c /home/Ethan/assignment4/ServerThread.cpp
 
 CMakeFiles/assignment4.dir/ServerThread.cpp.i: cmake_force
@@ -159,7 +146,7 @@ CMakeFiles/assignment4.dir/ServerThread.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o: ../HttpServletRequest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o -c /home/Ethan/assignment4/HttpServletRequest.cpp
 
 CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i: cmake_force
@@ -172,7 +159,7 @@ CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o: ../HttpServletResponse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o -c /home/Ethan/assignment4/HttpServletResponse.cpp
 
 CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i: cmake_force
@@ -185,7 +172,7 @@ CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/HttpServlet.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/HttpServlet.cpp.o: ../HttpServlet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/assignment4.dir/HttpServlet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/assignment4.dir/HttpServlet.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServlet.cpp.o -c /home/Ethan/assignment4/HttpServlet.cpp
 
 CMakeFiles/assignment4.dir/HttpServlet.cpp.i: cmake_force
@@ -198,7 +185,7 @@ CMakeFiles/assignment4.dir/HttpServlet.cpp.s: cmake_force
 
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: ../UploadServlet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/UploadServlet.cpp.o -c /home/Ethan/assignment4/UploadServlet.cpp
 
 CMakeFiles/assignment4.dir/UploadServlet.cpp.i: cmake_force
@@ -211,7 +198,6 @@ CMakeFiles/assignment4.dir/UploadServlet.cpp.s: cmake_force
 
 # Object files for target assignment4
 assignment4_OBJECTS = \
-"CMakeFiles/assignment4.dir/multithreadedserver.c.o" \
 "CMakeFiles/assignment4.dir/socketclient.cc.o" \
 "CMakeFiles/assignment4.dir/ServerSocket.cpp.o" \
 "CMakeFiles/assignment4.dir/Socket.cpp.o" \
@@ -226,7 +212,6 @@ assignment4_OBJECTS = \
 # External object files for target assignment4
 assignment4_EXTERNAL_OBJECTS =
 
-assignment4.exe: CMakeFiles/assignment4.dir/multithreadedserver.c.o
 assignment4.exe: CMakeFiles/assignment4.dir/socketclient.cc.o
 assignment4.exe: CMakeFiles/assignment4.dir/ServerSocket.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/Socket.cpp.o
@@ -239,7 +224,7 @@ assignment4.exe: CMakeFiles/assignment4.dir/HttpServlet.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/UploadServlet.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/build.make
 assignment4.exe: CMakeFiles/assignment4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable assignment4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable assignment4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

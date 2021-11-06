@@ -32,6 +32,7 @@ void ServerSocket::init() {
         int cSock = accept(sock, (struct sockaddr *)&remoteAddr, &addrLen);
         ServerThread *thread = new ServerThread(cSock, threadCount);
         thread->start();
+        delete(thread);
     }
 }
 

@@ -6,4 +6,5 @@ int main() {
     ServerSocket *ss = new ServerSocket(9111);
     perror("started");
     ss->init();
+    delete(ss);
 }

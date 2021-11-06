@@ -16,7 +16,7 @@ public:
     UploadServlet()= default;
     void doGet(HttpServletRequest req, HttpServletResponse res) override;
     void doPost(HttpServletRequest req, HttpServletResponse res) override;
-    ~UploadServlet()= default;
+    ~UploadServlet() {};
 };
 
 

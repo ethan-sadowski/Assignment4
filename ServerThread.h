@@ -14,7 +14,6 @@ class ServerThread : public Thread {
 public:
     explicit ServerThread(int socket, int id);
     void run() ;
-    void closeThread();
     ~ServerThread();
 private:
     int socket;

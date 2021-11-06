@@ -128,9 +128,6 @@
 		<Unit filename="/home/Ethan/assignment4/UploadServlet.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/Ethan/assignment4/multithreadedserver.c">
-			<Option target="assignment4"/>
-		</Unit>
 		<Unit filename="/home/Ethan/assignment4/multithreadedserver.cpp">
 			<Option target="assignment4"/>
 		</Unit>

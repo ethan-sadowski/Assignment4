@@ -9,7 +9,6 @@ void* startMethodInThread(void *arg)
         return 0;
     ServerThread *thread = (ServerThread*)arg;
     thread->run();
-    thread->closeThread();
     return NULL;
 }
 Thread::Thread(Thread *childThread) {

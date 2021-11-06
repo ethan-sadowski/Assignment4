@@ -38,15 +38,14 @@ void ServerThread::run() {
     HttpServletResponse *httpResponse = new HttpServletResponse(res);
     httpRequest->serialize();
     httpCall(*httpRequest, *httpResponse);
-    send(socket, httpResponse->getResponse().str().c_str(), sizeof(httpResponse->getResponse()), 0);
-}
-
-void ServerThread::closeThread(){
-    close(this->socket);
-    cout << "Thread " << this->id << " closed" << endl;
-    delete(this);
+    cout << sizeof(httpResponse->getResponse()) << endl;
+    send(socket, httpResponse->getResponse().str().c_str(), strlen(httpResponse->getResponse().str().c_str()), 0);
+    delete (httpRequest);
+    delete (httpResponse);
+    delete[] (buf);
 }
 
 ServerThread::~ServerThread() {
     cout << "Thread " << this->id << " deleted" << endl;
+    free(this);
 }

@@ -21,7 +21,6 @@ void UploadServlet::doGet(HttpServletRequest req, HttpServletResponse res) {
         "<input type=\"submit\" value=\"Submit\"/>"
         "</form>"
         "</body></html>\r\n";
-    cout << body << endl;
     res.print(body);
 }
 

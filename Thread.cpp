@@ -18,7 +18,6 @@ Thread::Thread(Thread *childThread) {
 }
 void Thread::start() {
     pthread_t tid;
-    perror("made thread?");
     pthread_create(&tid, NULL, startMethodInThread, (void *) this);
     memcpy(this->state, (const void *)&tid, sizeof(pthread_t));
 }

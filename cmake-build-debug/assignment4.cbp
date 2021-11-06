@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/assignment4/cmake-build-debug"/>
+				<Option working_dir="/home/Ethan/assignment4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/assignment4/cmake-build-debug"/>
+				<Option working_dir="/home/Ethan/assignment4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/assignment4/cmake-build-debug"/>
+				<Option working_dir="/home/Ethan/assignment4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="assignment4">
-				<Option output="/home/assignment4/cmake-build-debug/assignment4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/assignment4/cmake-build-debug"/>
+				<Option output="/home/Ethan/assignment4/cmake-build-debug/assignment4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Ethan/assignment4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment4"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment4"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="assignment4/fast">
-				<Option output="/home/assignment4/cmake-build-debug/assignment4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/assignment4/cmake-build-debug"/>
+				<Option output="/home/Ethan/assignment4/cmake-build-debug/assignment4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Ethan/assignment4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,47 +73,71 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment4/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/home/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment4/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/home/Ethan/assignment4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/assignment4/ServerSocket.cpp">
+		<Unit filename="/home/Ethan/assignment4/HttpServlet.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/ServerSocket.h">
+		<Unit filename="/home/Ethan/assignment4/HttpServlet.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/ServerThread.cpp">
+		<Unit filename="/home/Ethan/assignment4/HttpServletRequest.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/ServerThread.h">
+		<Unit filename="/home/Ethan/assignment4/HttpServletRequest.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/Socket.cpp">
+		<Unit filename="/home/Ethan/assignment4/HttpServletResponse.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/Socket.h">
+		<Unit filename="/home/Ethan/assignment4/HttpServletResponse.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/Thread.cpp">
+		<Unit filename="/home/Ethan/assignment4/ServerSocket.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/Thread.h">
+		<Unit filename="/home/Ethan/assignment4/ServerSocket.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/multithreadedserver.c">
+		<Unit filename="/home/Ethan/assignment4/ServerThread.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/multithreadedserver.cpp">
+		<Unit filename="/home/Ethan/assignment4/ServerThread.h">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/socketclient.cc">
+		<Unit filename="/home/Ethan/assignment4/Socket.cpp">
 			<Option target="assignment4"/>
 		</Unit>
-		<Unit filename="/home/assignment4/CMakeLists.txt">
+		<Unit filename="/home/Ethan/assignment4/Socket.h">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/Thread.cpp">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/Thread.h">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/UploadServlet.cpp">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/UploadServlet.h">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/multithreadedserver.c">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/multithreadedserver.cpp">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/socketclient.cc">
+			<Option target="assignment4"/>
+		</Unit>
+		<Unit filename="/home/Ethan/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

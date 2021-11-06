@@ -19,21 +19,17 @@ ServerSocket::ServerSocket(int port)
     if (bind (sock, (struct sockaddr *)&server, sizeof server) < 0) {
         perror ("binding stream socket");
     }
-    printf("%d", port);
     listen (sock, 5);
 }
 
 void ServerSocket::init() {
-    perror("init");
     socklen_t length = sizeof(sockaddr_in);
     sockaddr_in localAddr, remoteAddr;
     int addrLen = sizeof (remoteAddr);
     int threadCount = 0;
     while(1){
         threadCount++;
-        perror("Accepted connection?");
         int cSock = accept(sock, (struct sockaddr *)&remoteAddr, &addrLen);
-        perror("maybe?");
         ServerThread *thread = new ServerThread(cSock, threadCount);
         thread->start();
     }

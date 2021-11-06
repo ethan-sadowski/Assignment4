@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/assignment4.dir/HttpServlet.cpp.o"
+  "CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o"
+  "CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o"
   "CMakeFiles/assignment4.dir/ServerSocket.cpp.o"
   "CMakeFiles/assignment4.dir/ServerThread.cpp.o"
   "CMakeFiles/assignment4.dir/Socket.cpp.o"
   "CMakeFiles/assignment4.dir/Thread.cpp.o"
+  "CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
   "CMakeFiles/assignment4.dir/multithreadedserver.c.o"
   "CMakeFiles/assignment4.dir/multithreadedserver.cpp.o"
   "CMakeFiles/assignment4.dir/socketclient.cc.o"

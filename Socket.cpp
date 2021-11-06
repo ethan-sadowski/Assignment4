@@ -26,7 +26,7 @@ void Socket::sendResponse(char *res){
 
     if ((rval = write(sock, res, strlen(res))) < 0){
         perror("writing socket");
-    }else  {
+    } else  {
         printf("%s\n",res);
     }
 

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/esado/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/esado/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E rm -f
+RM = /cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/assignment4
+CMAKE_SOURCE_DIR = /home/Ethan/assignment4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/assignment4/cmake-build-debug
+CMAKE_BINARY_DIR = /home/Ethan/assignment4/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/assignment4/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/esado/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/esado/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assignment4/cmake-build-debug/CMakeFiles /home/assignment4/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ethan/assignment4/cmake-build-debug/CMakeFiles /home/Ethan/assignment4/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assignment4/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ethan/assignment4/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,78 @@ assignment4: cmake_check_build_system
 assignment4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/build
 .PHONY : assignment4/fast
+
+HttpServlet.o: HttpServlet.cpp.o
+.PHONY : HttpServlet.o
+
+# target to build an object file
+HttpServlet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.o
+.PHONY : HttpServlet.cpp.o
+
+HttpServlet.i: HttpServlet.cpp.i
+.PHONY : HttpServlet.i
+
+# target to preprocess a source file
+HttpServlet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.i
+.PHONY : HttpServlet.cpp.i
+
+HttpServlet.s: HttpServlet.cpp.s
+.PHONY : HttpServlet.s
+
+# target to generate assembly for a file
+HttpServlet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.s
+.PHONY : HttpServlet.cpp.s
+
+HttpServletRequest.o: HttpServletRequest.cpp.o
+.PHONY : HttpServletRequest.o
+
+# target to build an object file
+HttpServletRequest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o
+.PHONY : HttpServletRequest.cpp.o
+
+HttpServletRequest.i: HttpServletRequest.cpp.i
+.PHONY : HttpServletRequest.i
+
+# target to preprocess a source file
+HttpServletRequest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i
+.PHONY : HttpServletRequest.cpp.i
+
+HttpServletRequest.s: HttpServletRequest.cpp.s
+.PHONY : HttpServletRequest.s
+
+# target to generate assembly for a file
+HttpServletRequest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s
+.PHONY : HttpServletRequest.cpp.s
+
+HttpServletResponse.o: HttpServletResponse.cpp.o
+.PHONY : HttpServletResponse.o
+
+# target to build an object file
+HttpServletResponse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o
+.PHONY : HttpServletResponse.cpp.o
+
+HttpServletResponse.i: HttpServletResponse.cpp.i
+.PHONY : HttpServletResponse.i
+
+# target to preprocess a source file
+HttpServletResponse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i
+.PHONY : HttpServletResponse.cpp.i
+
+HttpServletResponse.s: HttpServletResponse.cpp.s
+.PHONY : HttpServletResponse.s
+
+# target to generate assembly for a file
+HttpServletResponse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s
+.PHONY : HttpServletResponse.cpp.s
 
 ServerSocket.o: ServerSocket.cpp.o
 .PHONY : ServerSocket.o
@@ -225,6 +297,30 @@ Thread.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/Thread.cpp.s
 .PHONY : Thread.cpp.s
 
+UploadServlet.o: UploadServlet.cpp.o
+.PHONY : UploadServlet.o
+
+# target to build an object file
+UploadServlet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadServlet.cpp.o
+.PHONY : UploadServlet.cpp.o
+
+UploadServlet.i: UploadServlet.cpp.i
+.PHONY : UploadServlet.i
+
+# target to preprocess a source file
+UploadServlet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadServlet.cpp.i
+.PHONY : UploadServlet.cpp.i
+
+UploadServlet.s: UploadServlet.cpp.s
+.PHONY : UploadServlet.s
+
+# target to generate assembly for a file
+UploadServlet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadServlet.cpp.s
+.PHONY : UploadServlet.cpp.s
+
 multithreadedserver.o: multithreadedserver.c.o
 .PHONY : multithreadedserver.o
 
@@ -306,6 +402,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... assignment4"
+	@echo "... HttpServlet.o"
+	@echo "... HttpServlet.i"
+	@echo "... HttpServlet.s"
+	@echo "... HttpServletRequest.o"
+	@echo "... HttpServletRequest.i"
+	@echo "... HttpServletRequest.s"
+	@echo "... HttpServletResponse.o"
+	@echo "... HttpServletResponse.i"
+	@echo "... HttpServletResponse.s"
 	@echo "... ServerSocket.o"
 	@echo "... ServerSocket.i"
 	@echo "... ServerSocket.s"
@@ -318,6 +423,9 @@ help:
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
+	@echo "... UploadServlet.o"
+	@echo "... UploadServlet.i"
+	@echo "... UploadServlet.s"
 	@echo "... multithreadedserver.o"
 	@echo "... multithreadedserver.i"
 	@echo "... multithreadedserver.s"

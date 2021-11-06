@@ -21,5 +21,6 @@ void Thread::start() {
     memcpy(this->state, (const void *)&tid, sizeof(pthread_t));
 }
 Thread::~Thread() {
+    printf("Thread closed");
     free(this->state);
 }

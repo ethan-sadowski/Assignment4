@@ -37,6 +37,7 @@ void HttpServletRequest::serialize() {
                 removeEndCharacters(boundary);
                 webKitFound = true;
             } else if (strstr(nextHeader.c_str(), boundary.c_str()) && webKitFound) {
+                nextHeader.erase(0, 44);
                 getline(this->inputStream, nextValue);
                 nextValue.erase(0, 1);
                 removeEndCharacters(nextValue);

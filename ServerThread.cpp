@@ -1,4 +1,5 @@
-#include <winsock2.h>
+#include <cstring>
+#include <sys/socket.h>
 #include "ServerThread.h"
 #include "HttpServletRequest.h"
 #include "HttpServletResponse.h"
@@ -22,6 +23,7 @@ void httpCall(HttpServletRequest& req, HttpServletResponse& res) {
     if (req.getHeader("Method") == "POST") {
         httpServlet->doPost(req, res);
     }
+    delete(httpServlet);
 }
 
 void ServerThread::run() {
@@ -32,6 +34,7 @@ void ServerThread::run() {
     if ((rval = read(socket, buf, 1024)) < 0){
         perror("reading socket");
     } else {
+        printf("%s", buf);
         req << buf;
     }
     HttpServletRequest *httpRequest = new HttpServletRequest(req);
@@ -40,12 +43,13 @@ void ServerThread::run() {
     httpCall(*httpRequest, *httpResponse);
     cout << sizeof(httpResponse->getResponse()) << endl;
     send(socket, httpResponse->getResponse().str().c_str(), strlen(httpResponse->getResponse().str().c_str()), 0);
+    close(socket);
     delete (httpRequest);
     delete (httpResponse);
     delete[] (buf);
+    delete(this);
 }
 
 ServerThread::~ServerThread() {
     cout << "Thread " << this->id << " deleted" << endl;
-    free(this);
 }

@@ -3,6 +3,7 @@
 //
 
 #include <cstring>
+#include <mutex>
 #include "HttpServletRequest.h"
 
 void removeEndCharacters(string& inputString) {
@@ -25,6 +26,7 @@ void HttpServletRequest::serialize() {
     this->headers.insert(make_pair("Protocol", protocol));
     string boundary, buf;
     bool webKitFound = false;
+    bool boundaryReached = false;
     while(getline(this->inputStream, nextHeader, ':')) {
         removeEndCharacters(nextHeader);
             if (nextHeader == "Content-Type" && !webKitFound) {
@@ -48,7 +50,7 @@ void HttpServletRequest::serialize() {
                 removeEndCharacters(nextValue);
                 nextValue.erase(0, 1);
                 this->addHeader("Content", nextValue);
-                cout << this->getHeader("Content-Disposition") << endl;
+                boundaryReached = true;
                 break;
             } else {
                 getline(this->inputStream, nextValue, '\n');
@@ -56,10 +58,24 @@ void HttpServletRequest::serialize() {
                 removeEndCharacters(nextValue);
                 this->addHeader(nextHeader, nextValue);
             }
+
     }
 
     if (this->getHeader("Method") == "POST") {
         //Parse post data
+//        if (boundaryReached) {
+//            cout << this->getHeader("Content-Disposition") << endl;
+//
+//            int len;
+//            int imageSize = atoi(this->getHeader("Content-Length").c_str());
+//            char buf[2048];
+//            while (imageSize > 0) {
+//                this->inputStream.read(buf, 2048);
+//                printf("%s", buf);
+//                imageSize -= 2048;
+//                this->imageData.push_back(buf);
+//            }
+//        }
     }
 }
 

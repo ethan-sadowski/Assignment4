@@ -1,5 +1,6 @@
 #include <cstring>
 #include <sys/socket.h>
+#include <mutex>
 #include "ServerThread.h"
 #include "HttpServletRequest.h"
 #include "HttpServletResponse.h"
@@ -27,23 +28,26 @@ void httpCall(HttpServletRequest& req, HttpServletResponse& res) {
 }
 
 void ServerThread::run() {
+    mutex mtx;
+    mtx.lock();
     int rval;
+    vector<char*> imageData;
     stringstream req, res;
+    string next;
     char *buf = new char[1024];
 
     if ((rval = read(socket, buf, 1024)) < 0){
         perror("reading socket");
     } else {
-        printf("%s", buf);
         req << buf;
     }
     HttpServletRequest *httpRequest = new HttpServletRequest(req);
     HttpServletResponse *httpResponse = new HttpServletResponse(res);
     httpRequest->serialize();
     httpCall(*httpRequest, *httpResponse);
-    cout << sizeof(httpResponse->getResponse()) << endl;
     send(socket, httpResponse->getResponse().str().c_str(), strlen(httpResponse->getResponse().str().c_str()), 0);
     close(socket);
+    mtx.unlock();
     delete (httpRequest);
     delete (httpResponse);
     delete[] (buf);

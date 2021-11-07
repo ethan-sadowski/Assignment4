@@ -25,5 +25,13 @@ void UploadServlet::doGet(HttpServletRequest req, HttpServletResponse res) {
 }
 
 void UploadServlet::doPost(HttpServletRequest req, HttpServletResponse res) {
-
+    ofstream out;
+//    string fileString = req.getHeader("Content-Disposition");
+    string dir = "../Images/";
+    string filename =  dir.append("test.jpg");
+    out.open(filename, std::ios::out | std::ios::binary);
+    for (int i = 0; i < req.getImageData().size(); i++) {
+        out << req.getImageData().at(i);
+    }
+    out.close();
 }

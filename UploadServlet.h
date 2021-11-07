@@ -5,7 +5,7 @@
 #ifndef MULTITHREADEDSERVER_C_UPLOADSERVLET_H
 #define MULTITHREADEDSERVER_C_UPLOADSERVLET_H
 
-
+#include <fstream>
 #include "HttpServletRequest.h"
 #include "HttpServletResponse.h"
 #include "HttpServlet.h"

@@ -30,7 +30,7 @@ void ServerSocket::init() {
     while(1){
         threadCount++;
         int cSock = accept(sock, (struct sockaddr *)&remoteAddr, &addrLen);
-        ServerThread *thread = new ServerThread(cSock, threadCount);
+        Thread *thread = new ServerThread(cSock, threadCount);
         thread->start();
     }
 }

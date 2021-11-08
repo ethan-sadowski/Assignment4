@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Ethan/assignment4/ServerSocket.h
+ServerThread.h
+/home/Ethan/assignment4/ServerThread.h
+
+/home/Ethan/assignment4/ServerThread.h
+Thread.h
+/home/Ethan/assignment4/Thread.h
+cstdio
+-
+cstdlib
+-
+pthread.h
+-
+vector
+-
+unistd.h
+-
+sstream
+-
+string
+-
+iostream
+-
+
+/home/Ethan/assignment4/Socket.h
+
+/home/Ethan/assignment4/Thread.h
+
+/home/Ethan/assignment4/multithreadedserver.cpp
+Socket.h
+/home/Ethan/assignment4/Socket.h
+ServerSocket.h
+/home/Ethan/assignment4/ServerSocket.h
+cstddef
+-
+

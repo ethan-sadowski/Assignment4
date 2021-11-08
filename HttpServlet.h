@@ -11,8 +11,8 @@
 class HttpServlet {
 public:
     HttpServlet(){};
-    virtual void doGet(HttpServletRequest request, HttpServletResponse response){};
-    virtual void doPost(HttpServletRequest request, HttpServletResponse response){};
+    virtual void doGet(HttpServletRequest& request, HttpServletResponse& response){};
+    virtual void doPost(HttpServletRequest& request, HttpServletResponse& response){};
     virtual ~HttpServlet()= default;
 };
 

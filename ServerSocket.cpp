@@ -19,7 +19,7 @@ ServerSocket::ServerSocket(int port)
     if (bind (sock, (struct sockaddr *)&server, sizeof server) < 0) {
         perror ("binding stream socket");
     }
-    listen (sock, 5);
+    listen (sock, 1);
 }
 
 void ServerSocket::init() {
@@ -28,8 +28,8 @@ void ServerSocket::init() {
     int addrLen = sizeof (remoteAddr);
     int threadCount = 0;
     while(1){
-        threadCount++;
         int cSock = accept(sock, (struct sockaddr *)&remoteAddr, &addrLen);
+        threadCount++;
         Thread *thread = new ServerThread(cSock, threadCount);
         thread->start();
     }

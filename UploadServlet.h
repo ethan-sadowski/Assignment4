@@ -14,8 +14,8 @@ class UploadServlet : public HttpServlet {
 private:
 public:
     UploadServlet()= default;
-    void doGet(HttpServletRequest req, HttpServletResponse res) override;
-    void doPost(HttpServletRequest req, HttpServletResponse res) override;
+    void doGet(HttpServletRequest& req, HttpServletResponse& res) override;
+    void doPost(HttpServletRequest& req, HttpServletResponse& res) override;
     ~UploadServlet() override = default;
 };
 

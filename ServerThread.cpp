@@ -191,9 +191,14 @@ void ServerThread::run() {
     write(socket, httpResponse->getResponse().str().c_str(), strlen(httpResponse->getResponse().str().c_str()));
     delete (httpRequest);
     delete (httpResponse);
+}
+
+void ServerThread::closeThread() {
     close(socket);
+    delete(this);
 }
 
 ServerThread::~ServerThread() {
     cout << "Thread " << this->id << " deleted" << endl;
+    close(socket);
 }

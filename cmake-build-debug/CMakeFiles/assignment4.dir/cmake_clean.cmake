@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/assignment4.dir/ServerThread.cpp.o"
   "CMakeFiles/assignment4.dir/Socket.cpp.o"
   "CMakeFiles/assignment4.dir/Thread.cpp.o"
+  "CMakeFiles/assignment4.dir/UploadClient.cpp.o"
   "CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
   "CMakeFiles/assignment4.dir/multithreadedserver.cpp.o"
   "CMakeFiles/assignment4.dir/socketclient.cc.o"

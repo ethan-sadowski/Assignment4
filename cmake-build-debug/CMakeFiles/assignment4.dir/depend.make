@@ -32,6 +32,8 @@ CMakeFiles/assignment4.dir/Thread.cpp.o: \
  ../ServerThread.h \
  ../Thread.cpp \
  ../Thread.h
+CMakeFiles/assignment4.dir/UploadClient.cpp.o: \
+ ../UploadClient.cpp
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: \
  ../HttpServlet.h \
  ../HttpServletRequest.h \

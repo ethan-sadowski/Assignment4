@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/steve/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E rm -f
+RM = /cygdrive/c/Users/steve/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Ethan/assignment4
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/steve/CSTTerm3/COMP3940/Assignments/Assignment4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Ethan/assignment4/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/steve/CSTTerm3/COMP3940/Assignments/Assignment4/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/Ethan/assignment4/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/steve/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Ethan/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/steve/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ethan/assignment4/cmake-build-debug/CMakeFiles /home/Ethan/assignment4/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/steve/CSTTerm3/COMP3940/Assignments/Assignment4/cmake-build-debug/CMakeFiles /cygdrive/c/Users/steve/CSTTerm3/COMP3940/Assignments/Assignment4/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ethan/assignment4/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/steve/CSTTerm3/COMP3940/Assignments/Assignment4/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -297,6 +297,30 @@ Thread.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/Thread.cpp.s
 .PHONY : Thread.cpp.s
 
+UploadClient.o: UploadClient.cpp.o
+.PHONY : UploadClient.o
+
+# target to build an object file
+UploadClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadClient.cpp.o
+.PHONY : UploadClient.cpp.o
+
+UploadClient.i: UploadClient.cpp.i
+.PHONY : UploadClient.i
+
+# target to preprocess a source file
+UploadClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadClient.cpp.i
+.PHONY : UploadClient.cpp.i
+
+UploadClient.s: UploadClient.cpp.s
+.PHONY : UploadClient.s
+
+# target to generate assembly for a file
+UploadClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/UploadClient.cpp.s
+.PHONY : UploadClient.cpp.s
+
 UploadServlet.o: UploadServlet.cpp.o
 .PHONY : UploadServlet.o
 
@@ -399,6 +423,9 @@ help:
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
+	@echo "... UploadClient.o"
+	@echo "... UploadClient.i"
+	@echo "... UploadClient.s"
 	@echo "... UploadServlet.o"
 	@echo "... UploadServlet.i"
 	@echo "... UploadServlet.s"

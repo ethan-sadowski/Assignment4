@@ -21,4 +21,4 @@ add_executable(assignment4
         HttpServlet.cpp
         HttpServlet.h
         UploadServlet.cpp
-        UploadServlet.h)
+        UploadServlet.h UploadClient.cpp)

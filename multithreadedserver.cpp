@@ -2,9 +2,12 @@
 #include "ServerSocket.h"
 #include <cstddef>
 
+using namespace std;
+
 int main() {
-    ServerSocket *ss = new ServerSocket(9999);
-    perror("started");
+    int port = 9999;
+    ServerSocket *ss = new ServerSocket(port);
+    cout << "Server started on port " << port << endl;
     ss->init();
     delete(ss);
 }

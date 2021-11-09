@@ -129,6 +129,30 @@ assignment4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/build
 .PHONY : assignment4/fast
 
+CaptionException.o: CaptionException.cpp.o
+.PHONY : CaptionException.o
+
+# target to build an object file
+CaptionException.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/CaptionException.cpp.o
+.PHONY : CaptionException.cpp.o
+
+CaptionException.i: CaptionException.cpp.i
+.PHONY : CaptionException.i
+
+# target to preprocess a source file
+CaptionException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/CaptionException.cpp.i
+.PHONY : CaptionException.cpp.i
+
+CaptionException.s: CaptionException.cpp.s
+.PHONY : CaptionException.s
+
+# target to generate assembly for a file
+CaptionException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/CaptionException.cpp.s
+.PHONY : CaptionException.cpp.s
+
 ServerSocket.o: ServerSocket.cpp.o
 .PHONY : ServerSocket.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... assignment4"
+	@echo "... CaptionException.o"
+	@echo "... CaptionException.i"
+	@echo "... CaptionException.s"
 	@echo "... ServerSocket.o"
 	@echo "... ServerSocket.i"
 	@echo "... ServerSocket.s"

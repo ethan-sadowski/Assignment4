@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/Ethan/assignment4/CaptionException.cpp">
+			<Option target="assignment4"/>
+		</Unit>
 		<Unit filename="/home/Ethan/assignment4/HttpServlet.h">
 			<Option target="assignment4"/>
 		</Unit>

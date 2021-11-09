@@ -193,11 +193,6 @@ void ServerThread::run() {
     delete (httpResponse);
 }
 
-void ServerThread::closeThread() {
-    close(socket);
-    delete(this);
-}
-
 ServerThread::~ServerThread() {
     cout << "Thread " << this->id << " deleted" << endl;
     close(socket);

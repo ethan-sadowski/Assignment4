@@ -13,6 +13,7 @@
 
 using namespace std;
 
+/* Represents an HttpServletResponse */
 class HttpServletResponse {
 private:
     stringstream& outputStream;

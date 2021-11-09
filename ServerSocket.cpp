@@ -5,6 +5,8 @@
 #include <resolv.h>
 #include <unistd.h>
 #include <stdio.h>
+
+/* Instantiates a ServerSocket */
 ServerSocket::ServerSocket(int port)
 {
     sock = socket (AF_INET, SOCK_STREAM, 0);
@@ -19,17 +21,18 @@ ServerSocket::ServerSocket(int port)
     if (bind (sock, (struct sockaddr *)&server, sizeof server) < 0) {
         perror ("binding stream socket");
     }
-    listen (sock, 5);
+    listen (sock, 1);
 }
 
+/* Initializes the server to accept incoming requests */
 void ServerSocket::init() {
     socklen_t length = sizeof(sockaddr_in);
     sockaddr_in localAddr, remoteAddr;
     int addrLen = sizeof (remoteAddr);
     int threadCount = 0;
     while(1){
-        threadCount++;
         int cSock = accept(sock, (struct sockaddr *)&remoteAddr, &addrLen);
+        threadCount++;
         Thread *thread = new ServerThread(cSock, threadCount);
         thread->start();
     }

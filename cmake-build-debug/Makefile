@@ -129,78 +129,6 @@ assignment4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/build
 .PHONY : assignment4/fast
 
-HttpServlet.o: HttpServlet.cpp.o
-.PHONY : HttpServlet.o
-
-# target to build an object file
-HttpServlet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.o
-.PHONY : HttpServlet.cpp.o
-
-HttpServlet.i: HttpServlet.cpp.i
-.PHONY : HttpServlet.i
-
-# target to preprocess a source file
-HttpServlet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.i
-.PHONY : HttpServlet.cpp.i
-
-HttpServlet.s: HttpServlet.cpp.s
-.PHONY : HttpServlet.s
-
-# target to generate assembly for a file
-HttpServlet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServlet.cpp.s
-.PHONY : HttpServlet.cpp.s
-
-HttpServletRequest.o: HttpServletRequest.cpp.o
-.PHONY : HttpServletRequest.o
-
-# target to build an object file
-HttpServletRequest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o
-.PHONY : HttpServletRequest.cpp.o
-
-HttpServletRequest.i: HttpServletRequest.cpp.i
-.PHONY : HttpServletRequest.i
-
-# target to preprocess a source file
-HttpServletRequest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i
-.PHONY : HttpServletRequest.cpp.i
-
-HttpServletRequest.s: HttpServletRequest.cpp.s
-.PHONY : HttpServletRequest.s
-
-# target to generate assembly for a file
-HttpServletRequest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s
-.PHONY : HttpServletRequest.cpp.s
-
-HttpServletResponse.o: HttpServletResponse.cpp.o
-.PHONY : HttpServletResponse.o
-
-# target to build an object file
-HttpServletResponse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o
-.PHONY : HttpServletResponse.cpp.o
-
-HttpServletResponse.i: HttpServletResponse.cpp.i
-.PHONY : HttpServletResponse.i
-
-# target to preprocess a source file
-HttpServletResponse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i
-.PHONY : HttpServletResponse.cpp.i
-
-HttpServletResponse.s: HttpServletResponse.cpp.s
-.PHONY : HttpServletResponse.s
-
-# target to generate assembly for a file
-HttpServletResponse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment4.dir/build.make CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s
-.PHONY : HttpServletResponse.cpp.s
-
 ServerSocket.o: ServerSocket.cpp.o
 .PHONY : ServerSocket.o
 
@@ -378,15 +306,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... assignment4"
-	@echo "... HttpServlet.o"
-	@echo "... HttpServlet.i"
-	@echo "... HttpServlet.s"
-	@echo "... HttpServletRequest.o"
-	@echo "... HttpServletRequest.i"
-	@echo "... HttpServletRequest.s"
-	@echo "... HttpServletResponse.o"
-	@echo "... HttpServletResponse.i"
-	@echo "... HttpServletResponse.s"
 	@echo "... ServerSocket.o"
 	@echo "... ServerSocket.i"
 	@echo "... ServerSocket.s"

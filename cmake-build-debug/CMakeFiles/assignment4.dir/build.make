@@ -144,48 +144,9 @@ CMakeFiles/assignment4.dir/ServerThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/ServerThread.cpp.s"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ethan/assignment4/ServerThread.cpp -o CMakeFiles/assignment4.dir/ServerThread.cpp.s
 
-CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o: ../HttpServletRequest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o -c /home/Ethan/assignment4/HttpServletRequest.cpp
-
-CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Ethan/assignment4/HttpServletRequest.cpp > CMakeFiles/assignment4.dir/HttpServletRequest.cpp.i
-
-CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ethan/assignment4/HttpServletRequest.cpp -o CMakeFiles/assignment4.dir/HttpServletRequest.cpp.s
-
-CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o: ../HttpServletResponse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o -c /home/Ethan/assignment4/HttpServletResponse.cpp
-
-CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Ethan/assignment4/HttpServletResponse.cpp > CMakeFiles/assignment4.dir/HttpServletResponse.cpp.i
-
-CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ethan/assignment4/HttpServletResponse.cpp -o CMakeFiles/assignment4.dir/HttpServletResponse.cpp.s
-
-CMakeFiles/assignment4.dir/HttpServlet.cpp.o: CMakeFiles/assignment4.dir/flags.make
-CMakeFiles/assignment4.dir/HttpServlet.cpp.o: ../HttpServlet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/assignment4.dir/HttpServlet.cpp.o"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/HttpServlet.cpp.o -c /home/Ethan/assignment4/HttpServlet.cpp
-
-CMakeFiles/assignment4.dir/HttpServlet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignment4.dir/HttpServlet.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Ethan/assignment4/HttpServlet.cpp > CMakeFiles/assignment4.dir/HttpServlet.cpp.i
-
-CMakeFiles/assignment4.dir/HttpServlet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignment4.dir/HttpServlet.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ethan/assignment4/HttpServlet.cpp -o CMakeFiles/assignment4.dir/HttpServlet.cpp.s
-
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: CMakeFiles/assignment4.dir/flags.make
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: ../UploadServlet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
 	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignment4.dir/UploadServlet.cpp.o -c /home/Ethan/assignment4/UploadServlet.cpp
 
 CMakeFiles/assignment4.dir/UploadServlet.cpp.i: cmake_force
@@ -204,9 +165,6 @@ assignment4_OBJECTS = \
 "CMakeFiles/assignment4.dir/Thread.cpp.o" \
 "CMakeFiles/assignment4.dir/multithreadedserver.cpp.o" \
 "CMakeFiles/assignment4.dir/ServerThread.cpp.o" \
-"CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o" \
-"CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o" \
-"CMakeFiles/assignment4.dir/HttpServlet.cpp.o" \
 "CMakeFiles/assignment4.dir/UploadServlet.cpp.o"
 
 # External object files for target assignment4
@@ -218,13 +176,10 @@ assignment4.exe: CMakeFiles/assignment4.dir/Socket.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/Thread.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/multithreadedserver.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/ServerThread.cpp.o
-assignment4.exe: CMakeFiles/assignment4.dir/HttpServletRequest.cpp.o
-assignment4.exe: CMakeFiles/assignment4.dir/HttpServletResponse.cpp.o
-assignment4.exe: CMakeFiles/assignment4.dir/HttpServlet.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/UploadServlet.cpp.o
 assignment4.exe: CMakeFiles/assignment4.dir/build.make
 assignment4.exe: CMakeFiles/assignment4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable assignment4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ethan/assignment4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable assignment4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

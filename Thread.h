@@ -1,4 +1,6 @@
 #pragma once
+
+/* Represents a Thread */
 class Thread {
 public:
     Thread(Thread *childThread);

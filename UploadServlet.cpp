@@ -4,9 +4,16 @@
 
 #include <mutex>
 #include "UploadServlet.h"
+#include <filesystem>
+#include <fstream>
+#include <string>
+#include <iterator>
 
 
-using namespace std;
+
+//using namespace std;
+
+using std::filesystem::directory_iterator;
 
 void UploadServlet::doGet(HttpServletRequest& req, HttpServletResponse& res) {
     string body =
@@ -29,13 +36,40 @@ void UploadServlet::doGet(HttpServletRequest& req, HttpServletResponse& res) {
 }
 
 void UploadServlet::doPost(HttpServletRequest& req, HttpServletResponse& res) {
-//    std::ofstream file("../Images/picture.png",
-//                       std::ofstream::binary | std::ofstream::out);
-//    char* buffer[1024];
-//    for(int i = 0; i < req.getImageData().size(); i++) {
-//        file.write(req.getImageData().at(i), ios::binary);
-//    }
-//
-//    file.close();
+    string fileType = req.getHeader("Filename");
+    fileType = fileType.erase(0, fileType.length() - 3);
+    string path = "../Images/";
+    string imageName = req.getHeader("Caption") + req.getHeader("Date") + "." + fileType;
+    string fileName = path.append(imageName);
 
+    /* Saves Image bytes to ../Images directory */
+    cout << "Saving Image" << endl;
+    ofstream file;
+    file.open(fileName);
+    for(int i = 0; i < req.getImageData().size(); i++) {
+        file << req.getImageData().at(i);
+    }
+    file.close();
+
+    /* Generating HTML listing the names of each image in ../Images */
+    path = "../Images/";
+    unsigned int pathChar = path.length();
+    string htmlString = "HTTP/1.1 200 OK\r\n"
+                        "Content-Type: text/html\r\n\r\n"
+                        "<!DOCTYPE html>"
+                        "<html><body><ul>";
+
+    for (const auto &file: directory_iterator(path)) {
+        string imgName = file.path().c_str();
+        string fileType = file.path().c_str();
+
+        unsigned int filePathChar = imgName.length();
+
+        imgName = imgName.substr(pathChar, filePathChar - 4);
+        fileType = fileType.substr(filePathChar - 4);
+        cout << imgName << endl;
+        htmlString += "<li>" + imgName + "</li>";
+    }
+    htmlString += "</ul></body> </html>";
+    res.print(htmlString);
 }

@@ -1,4 +1,6 @@
 #pragma once
+
+/* Represents a Socket */
 class Socket
 {
 public:

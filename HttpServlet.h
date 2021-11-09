@@ -8,6 +8,7 @@
 #include "HttpServletRequest.h"
 #include "HttpServletResponse.h"
 
+/* Represents a HttpServlet abstract class */
 class HttpServlet {
 public:
     HttpServlet(){};

@@ -4,6 +4,7 @@
 
 #include <mutex>
 #include "UploadServlet.h"
+#include "CaptionException.cpp"
 #include <filesystem>
 #include <fstream>
 #include <string>
@@ -39,7 +40,16 @@ void UploadServlet::doPost(HttpServletRequest& req, HttpServletResponse& res) {
     string fileType = req.getHeader("Filename");
     fileType = fileType.erase(0, fileType.length() - 3);
     string path = "../Images/";
-    string imageName = req.getHeader("Caption") + req.getHeader("Date") + "." + fileType;
+    string caption;
+    try {
+        caption = req.getHeader("Caption");
+        if (caption.length() == 0) {
+            throw CaptionException();
+        }
+    } catch (exception& e) {
+        cout << e.what() << endl;
+    }
+    string imageName = caption + req.getHeader("Date") + "." + fileType;
     string fileName = path.append(imageName);
 
     /* Saves Image bytes to ../Images directory */

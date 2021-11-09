@@ -30,10 +30,6 @@ CMakeFiles/assignment4.dir/UploadServlet.cpp.o: \
  ../UploadServlet.cpp \
  ../UploadServlet.h
 CMakeFiles/assignment4.dir/multithreadedserver.cpp.o: \
- ../ServerSocket.h \
- ../ServerThread.h \
- ../Socket.h \
- ../Thread.h \
  ../multithreadedserver.cpp
 CMakeFiles/assignment4.dir/socketclient.cc.o: \
  ../socketclient.cc

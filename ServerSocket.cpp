@@ -21,7 +21,7 @@ ServerSocket::ServerSocket(int port)
     if (bind (sock, (struct sockaddr *)&server, sizeof server) < 0) {
         perror ("binding stream socket");
     }
-    listen (sock, 1);
+    listen (sock, 5);
 }
 
 /* Initializes the server to accept incoming requests */

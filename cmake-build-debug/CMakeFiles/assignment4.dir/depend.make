@@ -24,12 +24,17 @@ CMakeFiles/assignment4.dir/Thread.cpp.o: \
  ../Thread.cpp \
  ../Thread.h
 CMakeFiles/assignment4.dir/UploadServlet.cpp.o: \
+ ../CaptionException.cpp \
  ../HttpServlet.h \
  ../HttpServletRequest.h \
  ../HttpServletResponse.h \
  ../UploadServlet.cpp \
  ../UploadServlet.h
 CMakeFiles/assignment4.dir/multithreadedserver.cpp.o: \
+ ../ServerSocket.h \
+ ../ServerThread.h \
+ ../Socket.h \
+ ../Thread.h \
  ../multithreadedserver.cpp
 CMakeFiles/assignment4.dir/socketclient.cc.o: \
  ../socketclient.cc

@@ -61,25 +61,49 @@ void UploadServlet::doPost(HttpServletRequest& req, HttpServletResponse& res) {
     }
     file.close();
 
-    /* Generating HTML listing the names of each image in ../Images */
     path = "../Images/";
     unsigned int pathChar = path.length();
-    string htmlString = "HTTP/1.1 200 OK\r\n"
-                        "Content-Type: text/html\r\n\r\n"
-                        "<!DOCTYPE html>"
-                        "<html><body><ul>";
 
-    for (const auto &file: directory_iterator(path)) {
-        string imgName = file.path().c_str();
-        string fileType = file.path().c_str();
+    /* Generating HTML listing the names of each image in ../Images */
+    if (!(req.getHeader("User-Agent") == "Client\r")) {
 
-        unsigned int filePathChar = imgName.length();
+        string htmlString = "HTTP/1.1 200 OK\r\n"
+                            "Content-Type: text/html\r\n\r\n"
+                            "<!DOCTYPE html>"
+                            "<html><body><ul>";
 
-        imgName = imgName.substr(pathChar, filePathChar - 4);
-        fileType = fileType.substr(filePathChar - 4);
-        cout << imgName << endl;
-        htmlString += "<li>" + imgName + "</li>";
+        for (const auto &file: directory_iterator(path)) {
+            string imgName = file.path().c_str();
+            string fileType = file.path().c_str();
+
+            unsigned int filePathChar = imgName.length();
+
+            imgName = imgName.substr(pathChar, filePathChar - 4);
+            fileType = fileType.substr(filePathChar - 4);
+            cout << imgName << endl;
+            htmlString += "<li>" + imgName + "</li>";
+        }
+        htmlString += "</ul></body> </html>";
+        res.print(htmlString);
+    } else {
+        string jsonString = "{\t\"image:\"\n";
+
+        for (const auto &file: directory_iterator(path)) {
+            string imgName = file.path().c_str();
+            string fileType = file.path().c_str();
+
+            unsigned int filePathChar = imgName.length();
+
+            imgName = imgName.substr(pathChar, filePathChar - 4);
+            fileType = fileType.substr(filePathChar - 4);
+
+            jsonString += "\t\t{\n\t\t\t\"imagename\": \"" + imgName
+                          + "\"\n\t\t\t\"filetype\": \"" + fileType
+                          + "\"\n\t\t},\n";
+
+        }
+        jsonString += "}";
+        res.print(jsonString);
     }
-    htmlString += "</ul></body> </html>";
-    res.print(htmlString);
+
 }

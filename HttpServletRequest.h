@@ -13,18 +13,17 @@
 
 using namespace std;
 
+/* Represents an HttpServletRequest */
 class HttpServletRequest {
 private:
-    stringstream& inputStream;
     map<string, string> headers;
-    vector<char*> imageData;
+    vector<char> imageData;
 public:
-    explicit HttpServletRequest(stringstream& ss) : inputStream(ss){};
-    HttpServletRequest(HttpServletRequest& c) : inputStream(c.inputStream), headers(c.headers){};
-    void serialize();
+    HttpServletRequest(map<string, string>& headerMap, vector<char>& imageData) : imageData(imageData), headers(headerMap){};
+    HttpServletRequest(HttpServletRequest& c) : headers(c.headers), imageData(c.imageData){};
     string getHeader(const string& key) {return this->headers.at(key);}
     void addHeader(const string& key, string& value) {this->headers.insert(make_pair(key, value));}
-    vector<char*> getImageData() {return this->imageData;}
+    vector<char> getImageData() {return this->imageData;}
     ~HttpServletRequest()= default;
 };
 

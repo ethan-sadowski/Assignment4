@@ -2,6 +2,7 @@
 
 #include "ServerThread.h"
 
+/* Represents a ServerSocket */
 class ServerSocket
 {
 public:

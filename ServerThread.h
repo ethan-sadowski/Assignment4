@@ -9,7 +9,7 @@
 #include <string>
 #include <iostream>
 
-
+/* Represents a ServerThread subclass of Thread */
 class ServerThread : public Thread {
 public:
     explicit ServerThread(int socket, int id);

@@ -9,27 +9,22 @@
 #include <sstream>
 #include <iterator>
 #include <fstream>
-#include <vector>
-#include <string>
-#include <cassert>
-#include <limits>
-#include <stdexcept>
-#include <cctype>
 
 using namespace std;
 
 const int BLOCK_SIZE = 16 * 1024;
 const string CRLF = "\r\n";
 
-
-int sendData(int sckt, const void *data, int datalen)
+/* Writes data to the socket */
+int writeToSocket(int sckt, const char *data, int datalength)
 {
-    const char *ptr = static_cast<const char*>(data);
-    while (datalen > 0) {
-        int bytes = send(sckt, ptr, datalen, 0);
-        if (bytes <=0) return -1;
-        ptr += bytes;
-        datalen -= bytes;
+    while (datalength > 0) {
+        int bytes = send(sckt, data, datalength, 0);
+        if (bytes <= 0) {
+            return -1;
+        }
+        data += bytes;
+        datalength -= bytes;
     }
     return 0;
 }
@@ -61,15 +56,18 @@ int main() {
 
     char buf[BLOCK_SIZE];
 
+    /* Prompt user for input */
     string file, caption, date;
-    cout << "Enter an image file name (with the tyoe extension), caption and date (YYYY-MM-DD) to upload" << endl;
+    cout << "Enter an image file name (with the type extension), caption and date (YYYY-MM-DD) to upload" << endl;
     cout << "The image you wish to upload must be in the same directory as this executable" << endl;
     cin >> file >> caption >> date;
     cout << "Executing file upload" << endl;
-    std::ifstream fin(file, std::ios::in | std::ios::binary);
-    std::ostringstream oss;
+
+    /* Get the specified file as a stringstream of bytes */
+    ifstream fin(file, ios::in | ios::binary);
+    ostringstream oss;
     oss << fin.rdbuf();
-    std::string data(oss.str());
+    string data(oss.str());
 
     string firstWebKit = "------WebKitFormBoundaryQJZ1hukB5Ezq5RXh" + CRLF +
                          "Content-Disposition: form-data; name=\"fileName\"; filename=\"" + file + "\"" + CRLF +
@@ -112,10 +110,13 @@ int main() {
 
     httpString.append(firstWebKit);
 
+    /* Calculate total image size */
     int totalSize = httpString.size() + data.size() + httpStringLast.size();
     string output = httpString + data + httpStringLast;
 
-    sendData(sock, output.c_str(), totalSize);
+    /* Write the bytes to the socket */
+    writeToSocket(sock, output.c_str(), totalSize);
+
     // wait for response
     memset(buf, 0, 4096);
     int byteReceived = recv(sock, buf, 4096, 0);
